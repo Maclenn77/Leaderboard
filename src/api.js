@@ -1,7 +1,7 @@
-function refresh() {
-    // Receive data from the API and Parsing the JSON
+export function refresh(element) {
+    element.insertAdjacentHTML('beforeend', '<li>Name: Score </li> ');
 }
 
-function submit() {
-    // Send data to the API
+export function submit(name, score) {
+    alert(name + ': ' + score);
 }
