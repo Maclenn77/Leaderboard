@@ -1,14 +1,21 @@
 import _ from 'lodash';
 import './style.css';
 
+const leaderBoard = document.querySelector('.leaderboard');
+
+
 function component() {
-    const element = document.createElement('div');
+    const score = document.createElement('li')
   
    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
+    score.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    score.classList.add('hello');
   
-    return element;
+    return score;
   }
   
-  document.body.appendChild(component());
+
+leaderBoard.insertAdjacentHTML('beforeend', `<li class='test border border-dark'>Name: Score </li> `)
+leaderBoard.insertAdjacentHTML('beforeend', `<li class='test border border-dark'>Name: Score </li> `)
+leaderBoard.insertAdjacentHTML('beforeend', `<li class='test border border-dark'>Name: Score </li> `)
+leaderBoard.insertAdjacentHTML('beforeend', `<li class='test border border-dark'>Name: Score </li> `)
