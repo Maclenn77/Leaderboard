@@ -1,10 +1,10 @@
 const gameId = 'RAxHi8yBkg2BqWCgax3x';
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/' + gameId + '/scores/';
 
-export async function refresh(element) {
+export async function refresh() {
   const response = await fetch(url);
   const json = await response.json();
-  alert(json.result[0].user)
+  return json.result;
 }
 
 export function submit(name, score) {
