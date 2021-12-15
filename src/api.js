@@ -7,15 +7,17 @@ export async function refresh(element) {
   alert(json.result[0].user)
 }
 
-export async function submit(name, score) {
-  const newScore = {user: name, score: parseInt(score)};
-  const response = await fetch(url, {
-    method: 'POST',
-    body: JSON.stringify(newScore),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
-  const responseText = await response.text();
-  console.log(responseText);
+export function submit(name, score) {
+  fetch(url, {
+   method: 'POST',
+   body: JSON.stringify({
+     user: name,
+     score: score,
+   }),
+   headers: {
+     'Content-type': 'application/json; charset=UTF-8',
+   },
+  })
+    .then((response) => response.json())
+    .then((json) => alert(json.result[1].user));
 }
