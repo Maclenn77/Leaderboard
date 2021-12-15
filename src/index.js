@@ -12,13 +12,13 @@ async function displayBoard() {
   });
 };
 
-addScore.addEventListener('click', () => {
+addScore.addEventListener('submit', async () => {
   const name = document.getElementById('name').value;
-  const score = document.getElementById('score').value;
-  api.submit(name, parseInt(score));
+  const score = parseInt(document.getElementById('score').value, 10);
+  await api.submit(name, score);
 });
 
-refreshButton.addEventListener('click', async () => {
+refreshButton.addEventListener('click', () => {
   const children = leaderBoard.childNodes;
   children.forEach((li) => {
     li.remove();

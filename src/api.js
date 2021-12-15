@@ -7,17 +7,16 @@ export async function refresh() {
   return json.result;
 }
 
-export function submit(name, score) {
-  fetch(url, {
-   method: 'POST',
-   body: JSON.stringify({
-     user: name,
-     score: score,
-   }),
-   headers: {
+export async function submit(name, number) {
+  const data = {
+    user: name, 
+    score: number,
+  };
+  await fetch(url, {
+    method: 'POST',
+    headers: {
      'Content-type': 'application/json; charset=UTF-8',
-   },
-  })
-    .then((response) => response.json())
-    .then((json) => alert(json.result[1].user));
+    },
+    body: JSON.stringify(data)
+  });
 }
