@@ -2,7 +2,7 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+> The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. Built with HTML, CSS, JS, and Webpack. 
 
 ![screenshot](./app_screenshot.png)
 
@@ -19,7 +19,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://maclenn77.github.io/Leaderboard/)
 
 
 ## Getting Started
@@ -32,17 +32,16 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Chrome Browser (recommended)
+- Node.js
+
 ### Setup
+
+- Clone the repo
 
 ### Install
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Run `npm install`
 
 ## Authors
 
