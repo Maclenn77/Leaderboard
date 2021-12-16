@@ -12,10 +12,10 @@ async function displayBoard() {
   });
 };
 
-addScore.addEventListener('submit', async () => {
+addScore.addEventListener('click', async () => {
   const name = document.getElementById('name').value;
   const score = parseInt(document.getElementById('score').value, 10);
-  await api.submit(name, score);
+  api.submit(name, score);
 });
 
 refreshButton.addEventListener('click', () => {

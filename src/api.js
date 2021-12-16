@@ -1,5 +1,6 @@
 const gameId = 'RAxHi8yBkg2BqWCgax3x';
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/' + gameId + '/scores/';
+const url = new URL('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/' + gameId + '/scores/');
+
 
 export async function refresh() {
   const response = await fetch(url);
@@ -12,11 +13,12 @@ export async function submit(name, number) {
     user: name, 
     score: number,
   };
-  await fetch(url, {
+  const response = await fetch(url, {
     method: 'POST',
     headers: {
-     'Content-type': 'application/json; charset=UTF-8',
+     'Content-Type': 'application/json; charset=UTF-8',
     },
     body: JSON.stringify(data)
-  });
+  }).catch(error => alert(error.message));
+  response = await response.json();
 }
