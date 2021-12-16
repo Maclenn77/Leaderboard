@@ -12,6 +12,8 @@ async function displayBoard() {
   });
 };
 
+displayBoard();
+
 addScore.addEventListener('click', async () => {
   const name = document.getElementById('name').value;
   const score = parseInt(document.getElementById('score').value, 10);
@@ -26,4 +28,3 @@ refreshButton.addEventListener('click', () => {
   displayBoard();
 })
 
-displayBoard();

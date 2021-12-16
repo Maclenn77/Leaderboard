@@ -15,7 +15,10 @@ export async function submit(name, number) {
   };
   const response = await fetch(url, {
     method: 'POST',
+    credentials: 'omit',
     headers: {
+     'Access-Control-Allow-Methods': 'POST; GET',
+     'Access-Control-Allow-Origin': '*',
      'Content-Type': 'application/json; charset=UTF-8',
     },
     body: JSON.stringify(data)
