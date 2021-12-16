@@ -1,6 +1,4 @@
-const gameId = 'RAxHi8yBkg2BqWCgax3x';
-const url = new URL('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/' + gameId + '/scores/');
-
+const url = new URL('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RAxHi8yBkg2BqWCgax3x/scores/');
 
 export async function refresh() {
   const response = await fetch(url);
@@ -17,11 +15,11 @@ export async function submit(name, number) {
     method: 'POST',
     credentials: 'omit',
     headers: {
-     'Access-Control-Allow-Methods': 'POST; GET',
-     'Access-Control-Allow-Origin': '*',
-     'Content-Type': 'application/json; charset=UTF-8',
+      'Access-Control-Allow-Methods': 'POST; GET',
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json; charset=UTF-8',
     },
-    body: JSON.stringify(data)
-  }).catch(error => alert(error.message));
-  response = await response.json();
+    body: JSON.stringify(data),
+  }).catch((error) => alert(error.message));
+  return response
 }

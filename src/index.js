@@ -1,5 +1,5 @@
 import './style.css';
-import * as api from './api';
+import * as api from './api.js';
 
 const leaderBoard = document.querySelector('.leaderboard');
 const addScore = document.querySelector('#add-score');
@@ -7,10 +7,10 @@ const refreshButton = document.querySelector('#refresh');
 
 async function displayBoard() {
   const leaderList = await api.refresh();
-  leaderList.forEach(element => {
+  leaderList.forEach((element) => {
     leaderBoard.insertAdjacentHTML('beforeend', `<li class="score-list">${element.user}: ${element.score} </li> `);
   });
-};
+}
 
 displayBoard();
 
@@ -26,5 +26,4 @@ refreshButton.addEventListener('click', () => {
     li.remove();
   });
   displayBoard();
-})
-
+});
