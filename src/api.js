@@ -8,7 +8,7 @@ export async function refresh() {
 
 export async function submit(name, number) {
   const data = {
-    user: name, 
+    user: name,
     score: number,
   };
   const response = await fetch(url, {
@@ -20,6 +20,6 @@ export async function submit(name, number) {
       'Content-Type': 'application/json; charset=UTF-8',
     },
     body: JSON.stringify(data),
-  }).catch((error) => alert(error.message));
-  return response
+  }).catch((error) => console.log(error.message));
+  return response;
 }
