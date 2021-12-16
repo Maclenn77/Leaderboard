@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Browser
+- Chrome Browser (recommended)
 - Node.js
 
 ### Setup
