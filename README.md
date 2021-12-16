@@ -19,6 +19,7 @@ Solo project for [Microverse](https://www.microverse.org/?grsf=6h9fw6)
 - JavaScript
 - Webpack
 - VS Code
+- Bootstrap
 - Gitflow
 
 ## Live Demo

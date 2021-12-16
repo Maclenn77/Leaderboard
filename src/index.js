@@ -31,4 +31,3 @@ refreshButton.addEventListener('click', () => {
   });
   displayBoard();
 });
-u
