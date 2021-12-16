@@ -2,11 +2,15 @@
 
 # Project Name
 
-> The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. Built with HTML, CSS, JS, and Webpack. 
+> The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. Built with HTML, CSS, JS, Webpack and Bootstrap.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+It's also mobile friendly!
+
+![screenshot](./mobile_screenshot.png)
+
+Solo project for [Microverse](https://www.microverse.org/?grsf=6h9fw6)
 
 ## Built With
 
@@ -15,6 +19,7 @@ Additional description about the project and its features.
 - JavaScript
 - Webpack
 - VS Code
+- Bootstrap
 - Gitflow
 
 ## Live Demo
@@ -24,8 +29,7 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**Clone this repo for develop your own project!**
 
 
 To get a local copy up and running follow these simple example steps.
@@ -34,10 +38,11 @@ To get a local copy up and running follow these simple example steps.
 
 - Chrome Browser (recommended)
 - Node.js
+- A friend to play with!
 
 ### Setup
 
-- Clone the repo
+- Clone the repo with `git clone git@github.com:Maclenn77/Leaderboard.git`
 
 ### Install
 
@@ -55,7 +60,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Maclenn77/Leaderboard/issues).
 
 ## Show your support
 
