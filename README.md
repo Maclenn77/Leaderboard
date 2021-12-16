@@ -8,7 +8,7 @@
 
 It's also mobile friendly!
 
-![screenshot](./mobile_screenshot.png)
+![screenshot](./mobile_screenshot.jpg)
 
 Solo project for [Microverse](https://www.microverse.org/?grsf=6h9fw6)
 
